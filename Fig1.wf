@@ -1,0 +1,26 @@
+# Figure 1 - The loan origination process
+Users {
+	a b c d e f g
+}
+
+Tasks {
+	(ProcR : a b c)
+	(Log : d e)
+	(PrepC : b d e)
+	(Sign : f g)
+}
+
+Precedence {
+	(ProcR <= Log)
+	(ProcR <= PrepC)
+	(Log <= Sign)
+	(PrepC <= Sign)
+}
+
+Constraints {
+ 	((a a) (a b) (a c) (a d) (a e) (a f) (a g) (b a) (b b) (b c) (b e) (b f) (b g) (c a) (c b) (c c) (c d) (c e) (c f) (c g) (d a) (d c) (d d) (d e) (d f) (d g) (e a) (e b) (e c) (e d) (e e) (e g) (f a) (f b) (f c) (f d) (f f) (f g) (g a) (g b) (g c) (g d) (g e) (g f) (g g) : ProcR : Log)
+ 	((a a) (a b) (a c) (a d) (a e) (a f) (a g) (b a) (b b) (b c) (b e) (b f) (b g) (c a) (c b) (c c) (c d) (c e) (c f) (c g) (d a) (d c) (d d) (d e) (d f) (d g) (e a) (e b) (e c) (e d) (e e) (e g) (f a) (f b) (f c) (f d) (f f) (f g) (g a) (g b) (g c) (g d) (g e) (g f) (g g) : ProcR : PrepC)
+ 	((a a) (a b) (a c) (a d) (a e) (a f) (a g) (b a) (b b) (b c) (b e) (b f) (b g) (c a) (c b) (c c) (c d) (c e) (c f) (c g) (d a) (d c) (d d) (d e) (d f) (d g) (e a) (e b) (e c) (e d) (e e) (e g) (f a) (f b) (f c) (f d) (f f) (f g) (g a) (g b) (g c) (g d) (g e) (g f) (g g) : PrepC : Sign)
+	(1 : 1 : ProcR PrepC)
+	(1 : 1 : Log PrepC)
+}
