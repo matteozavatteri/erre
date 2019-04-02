@@ -1,7 +1,5 @@
 # erre
 A tool for static, decremental and dynamic workflow resiliency
-# workflowresiliency
-A repository for sharing research on the workflow resiliency problem.
 
 To use Erre please install:
 - Java 8
