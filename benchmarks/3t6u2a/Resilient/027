@@ -1,0 +1,23 @@
+# 3t6u2a/Resilient/027
+# 3 task(s)
+# 6 users(s)
+# 2 constraint(s)
+
+Users {
+	u1 u2 u3 u4 u5 u6
+}
+
+Tasks {
+	(t1 : u1 u2 u3 u4 u5 u6)
+	(t2 : u1 u2 u3 u4 u5 u6)
+	(t3 : u1 u2 u3 u4 u5 u6)
+}
+
+Precedence {
+}
+
+Constraints {
+	(1 : 2 : t2 t3)
+	((u5 u5) (u6 u6) (u3 u2) (u5 u4) (u1 u3) (u6 u4) (u4 u6) (u2 u1) (u1 u2) (u4 u1) (u3 u5) (u2 u4) (u5 u2) : t2 : t3)
+}
+

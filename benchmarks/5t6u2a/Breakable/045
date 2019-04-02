@@ -1,0 +1,27 @@
+# 5t6u2a/Breakable/045
+# 5 task(s)
+# 6 users(s)
+# 4 constraint(s)
+
+Users {
+	u1 u2 u3 u4 u5 u6
+}
+
+Tasks {
+	(t1 : u1 u2 u3 u4 u5 u6)
+	(t2 : u1 u2 u3 u4 u5 u6)
+	(t3 : u1 u2 u3 u4 u5 u6)
+	(t4 : u1 u2 u3 u4 u5 u6)
+	(t5 : u1 u2 u3 u4 u5 u6)
+}
+
+Precedence {
+}
+
+Constraints {
+	(1 : 2 : t1 t2 t5)
+	(2 : 2 : t1 t4)
+	((u1 u1) (u2 u2) (u6 u6) (u2 u3) (u4 u5) (u6 u2) (u5 u1) (u1 u4) (u6 u3) (u2 u4) (u5 u3) (u3 u4) (u4 u3) (u2 u5) : t1 t2 : t3 t4 t5)
+	((u3 u3) (u4 u4) (u1 u1) (u6 u6) (u5 u4) (u2 u3) (u4 u1) (u3 u6) (u6 u3) (u3 u5) (u3 u4) (u5 u2) : t1 t5 : t3)
+}
+
