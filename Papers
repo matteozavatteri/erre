@@ -1,14 +1,14 @@
-[1] Matteo Zavatteri and Luca Viganò. Last Man Standing: Static, Decremental and Dynamic Resiliency via Controller Synthesis. 
-    Journal of Computer Security, 2019 (to appear)
-    
+[1] Matteo Zavatteri and Luca Viganò. Last Man Standing: Static, Decremental and Dynamic Resiliency via Controller Synthesis. Journal of Computer Security 27(3), 343–373 (2019)
+
 Link: https://content.iospress.com/articles/journal-of-computer-security/jcs181244
 Bibtex: 
 @article{ResiliencyJCS2019,
   author    = {Matteo Zavatteri and Luca Vigan\`o},
   title     = {Last Man Standing: Static, Decremental and Dynamic Resiliency via Controller Synthesis},
   journal   = {Journal of Computer Security},
-  volume    = {Pre-press},
-  pages     = {1-31},
+  volume    = {27},
+  number    = {3},
+  pages     = {343-373},
   year      = {2019},
   doi       = {10.3233/JCS-181244},
 }
